@@ -1,47 +1,155 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Portafolio </title>
-    <!--<title> mi portafolio </tittle>-->
-        <style>
-            body{
-                background-color:lightcoral;
-        }
-        a{
-            text-decoration:rgb(1, 1, 14);
-        }
-        </style>
-</head>
-<body>
-    <header>
-        <nav style="color:rgb(80, 80, 158)">
-         <a href="#">Home</a> 
-
-        <center> <a href="./contacto.html">Contacto</a> <br>
-
-            <a href="./Acerca de mí.html">Acerca de mi</a> <br>
-
-            <a href="./Proyecto.html">Proyecto</a>
-        </center>
-        
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="./style.css">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+     
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <nav class="navbar">
+          <div class="brand">
+            <h2>B<span>C</span></h2>
+          </div>
+          <ul class="menu">
+            <li><a href="#"  class="active">Inicio</a></li>
+            <li><a href="./Quien soy.html">Quien Soy</a></li>
+            <li><a href="./Portafolio.html">Portafolio</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
             
-        </nav>        
-</header>
-        <center><h1>Desarrolladora Java Full Stack</h1></center>
-        <center><h2>Bianca Pérez Cuna</h2> 
-        
-        </center>
-        <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus reprehenderit itaque iusto praesentium quisquam ad quis quidem sapiente consequatur sint, iure libero veniam alias, quas vero dignissimos architecto cum error.
-            <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis placeat corporis fugiat illum, asperiores laudantium rem a magnam in fuga eos. Culpa, veritatis ducimus velit dicta eius assumenda eos! Distinctio.</b>
-            <br></strong>
-        
+          </ul>  
+        </nav>
 
-         <center> <img src="https://hosting.photobucket.com/images/i/BianCuna/WhatsApp_Image_2022-12-08_at_8.23.37_PM.jpeg?width=320&height=320&fit=bounds" width="185px" height="190px">
-
-<body></center>
+      </header>
+      <main class="main">
+        <div class="info-content">
+          <h1>Soy <span>Bianca</span>Cuna</h1>
+           <p>Hola, Soy desarrolladorr Front-End </p> 
+           <a download href="#"><button class="download-cv">Download CV</button></a>
+        </div>
+        <img src="js/images/bianca.png" alt="">
+      </main>
+    </div>
+      <div class="about">
+        <img src="js/images/perrito.jpeg" alt="">
+        <div class="about-info">
+          <h2>Acerca de mí</h2>
+          <div class="divider"></div>
+          <p>Soy egresada de Ingeniería Geológica por la UNAM, pero me apasiona el área  de TI.</p>
+          <p>Tengo conocimientos sobre lenguajes como Java, Javascript, HTML, CSS.</p>
+          <button class="download-cv">Leer más</button>
+        </div>
+      </div>
+      <div class="portfolio">
+        <div class="portfolio-heading">
+          <h2>Mi Portafolio</h2>
+          <div class="divider"></div>
+        </div>
+        <div class="container">
+          <div class="card">
+            <div class="card__img">
+            </div>
+            <div class="card__title">
+              <h2>Descripción de Proyecto</h2>
+            </div>
+            <div class="card__proyect-links">
+              <a href="#">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="">
+                <i class="fas fa-globe-asia"></i>
+              </a>
+              <a href="">
+                <i class="fas fa-code"></i>
+              </a>
+            </div>
+            <div class="button-content">
+              <button class="project-details-button download-cv">
+                <a href="#">Detalles del Proyecto</a>
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__img">
+            </div>
+            <div class="card__title">
+              <h2>Descripción de Proyecto</h2>
+            </div>
+            <div class="card__proyect-links">
+              <a href="#">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="">
+                <i class="fas fa-globe-asia"></i>
+              </a>
+              <a href="">
+                <i class="fas fa-code"></i>
+              </a>
+            </div>
+            <div class="button-content">
+              <button class="project-details-button download-cv">
+                <a href="#">Detalles del Proyecto</a>
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__img">
+            </div>
+            <div class="card__title">
+              <h2>Descripción del Proyecto</h2>
+            </div>
+            <div class="card__proyect-links">
+              <a href="#">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="">
+                <i class="fas fa-globe-asia"></i>
+              </a>
+              <a href="">
+                <i class="fas fa-code"></i>
+              </a>
+            </div>
+            <div class="button-content">
+              <button class="project-details-button download-cv">
+                <a href="#">Detalles del Proyecto</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     
-</body>
-</html>
+      <div class="contact-section">
+        <div class="contact-heading">
+          <h2>Keep in touch</h2>
+          <div class="divider"></div>
+        </div>
+        <div class="container-contact">
+          <img src="js/images/about.jpeg" alt="50">
+
+          <div class="contact-form">
+            <h4>Enviar mensaje...</h4>
+            <form class="form-group">
+              <input type="text" placeholder="Nombre" class="input">
+              <input type="email" placeholder="Email" class="input">
+              <textarea name="message" placeholder="Place your message here..."></textarea>
+              <button type="submit" class="btn-submit">Enviar mensaje</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    
+      <footer class="footer"> 
+        <div class="footer-content">
+          <h2>Bianca Cuna</h2>
+          <h5>Frontend Developer</h5>
+        </div>
+        <div class="sotial-networks">
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-linkedin"></i>
+          <i class="fab fa-twitter-square"></i>
+        </div>
+      </footer>
+    </body>
