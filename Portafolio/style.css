@@ -13,79 +13,86 @@ body {
 .wrapper {
   width: 100vw;
   height: 100vh;
-  background-color: #0c1554;
+  background-color: #191c32;
   color: #fff;
 }
+
 .navbar {
   display: flex;
   justify-content: space-between;
   padding: 2em;
 }
+
 .brand {
   margin-top: -7px;
 }
+
 .brand span {
-  color: rgb(48, 240, 240);
+  color: aqua;
 }
+
 .menu {
   display: flex;
   width: 50%;
   justify-content: space-around;
 }
-.menu  li {
+
+.menu li {
   list-style: none;
 
 }
+
 .menu a {
   color: #fff;
   text-decoration: none;
-  padding: 10px 20px; 
+  padding: 10px 20px;
 }
 
-.menu li:hover a{
+.menu a:hover {
   background-color: aqua;
   color: #191c32;
 }
 
 .menu .active {
   color: aqua;
- 
+
 }
 
-
-.menu li a:hover {
-  color: #66E7C8;
+.toggle-menu,
+.info-content__subtitle,
+.info-content .sotial-networks {
+  display: none;
 }
-
 
 .main {
   margin: 0 auto;
   width: 80vw;
   height: 80vh;
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: 2em;
 }
 
 h1 {
-  font-size: 3em;
+  font-size: clamp(4vw, 1.5em, 3em);
 }
 
 .info-content span {
   color: aqua;
 }
 
-.download-cv {
+.download-cv,
+.project-details-button {
   padding: 10px 20px;
   background-color: aqua;
   border: none;
   border-radius: 20px;
   margin-top: 10px;
   cursor: pointer;
-  -webkit-box-shadow: 1px 3px 11px -5px rgba(102,231,200,0.69);
-  -moz-box-shadow: 1px 3px 11px -5px rgba(102,231,200,0.69);
-  box-shadow: 1px 3px 11px -5px rgba(102,231,200,0.69);
+  -webkit-box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, 0.69);
+  -moz-box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, 0.69);
+  box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, 0.69);
 }
 
 .download-cv:hover {
@@ -94,10 +101,15 @@ h1 {
 }
 
 .main img {
-  border:  7px solid aqua;
+  border: 7px solid aqua;
   width: 350px;
   height: 520px;
-  z-index: 1;
+  min-height: 300px;
+}
+
+#acerca {
+  font-weight: bolder;
+  
 }
 
 .about {
@@ -108,7 +120,7 @@ h1 {
 }
 
 .about img {
-  width: 100%;
+  max-width: 100%;
   grid-column: 1/5;
 }
 
@@ -158,11 +170,11 @@ h1 {
 
 .portfolio .container {
   width: 80vw;
-  height: 80vh;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -186,6 +198,7 @@ h1 {
   display: flex;
   justify-content: space-evenly;
 }
+
 .card__proyect-links a {
   color: #fff;
   text-decoration: none;
@@ -229,6 +242,7 @@ h1 {
   width: 30vw;
   margin-top: 2em;
 }
+
 .form-group textarea {
   height: 150px;
   padding: 1.5em;
@@ -311,7 +325,6 @@ h1 {
 
 .portfolio .container {
   width: 80vw;
-  height: 80vh;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -339,6 +352,7 @@ h1 {
   display: flex;
   justify-content: space-evenly;
 }
+
 .card__proyect-links a {
   color: #fff;
   text-decoration: none;
@@ -382,6 +396,7 @@ h1 {
   width: 30vw;
   margin-top: 2em;
 }
+
 .form-group textarea {
   height: 150px;
   padding: 1.5em;
@@ -438,4 +453,88 @@ h1 {
 
 .sotial-networks i {
   font-size: 1.5em;
+}
+
+@media screen and (max-width: 800px) {
+
+  .menu {
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: #2b3058;
+    z-index: 1;
+    transform: translateX(-110%);
+    transition: all .5s ease-in-out;
+  }
+
+  .show-menu {
+    transform: translateX(0%);
+    transition: all .5s ease-in-out;
+  }
+
+  .menu li {
+    margin: 2em;
+  }
+
+  .toggle-menu {
+    display: block;
+  }
+
+  .fa-bars {
+    font-size: 1.5em;
+    margin-top: -.2em;
+  }
+
+  .toggle-menu .fa-close {
+    font-size: 1.7em;
+    display: none;
+  }
+
+  .main,
+  .about {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .main img {
+    width: min(70%, 350px);
+    height: auto;
+  }
+
+  .info-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-content .sotial-networks,
+  .info-content__subtitle {
+    display: block;
+  }
+
+  .info-content__subtitle {
+    margin-bottom: .5em;
+  }
+
+  .info-content .sotial-networks {
+    display: flex;
+    justify-content: space-evenly;
+
+  }
+
+  .download-cv,
+  .info-content__p,
+  .contact-section__img {
+    display: none;
+  }
+
+  .form-group {
+    width: 80vw;
+
+  }
+
 }

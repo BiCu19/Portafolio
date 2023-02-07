@@ -14,36 +14,46 @@
           <div class="brand">
             <h2>B<span>C</span></h2>
           </div>
-          <ul class="menu">
+          <ul class="menu" id="menu">
             <li><a href="#"  class="active">Inicio</a></li>
-            <li><a href="./Quien soy.html">Quien Soy</a></li>
-            <li><a href="./Portafolio.html">Portafolio</a></li>
-            <li><a href="./contacto.html">Contacto</a></li>
+            <li><a href="#acerca">Quien Soy</a></li>
+            <li><a href="#porta">Portafolio</a></li>
+            <li><a href="#contact-section">Contacto</a></li>
             
-          </ul>  
+          </ul> 
+          <div class ="toggle-menu">
+            <i class ="fas fa-bars" id="toggle_open"></i>
+            <i class ="fas fa-close" id="toggle_close"></i>
+          </div>
         </nav>
 
       </header>
       <main class="main">
         <div class="info-content">
+          <span class="info-content_subtitle" >Frontend Developer </span>
           <h1>Soy <span>Bianca</span>Cuna</h1>
-           <p>Hola, Soy desarrolladorr Front-End </p> 
-           <a download href="#"><button class="download-cv">Download CV</button></a>
+          <div class="sotial-networks">
+            <i class="fab fa-linkedin"></i>
+          </div>
+           <p class ="info-content_p"> Hola, Soy desarrollador Front-End </p> 
+           <a download="Bianca_Pèrez_Cuna cv" href="js/images/CV.pdf"><button class="download-cv">Download CV</button></a>
         </div>
         <img src="js/images/bianca.png" alt="">
       </main>
     </div>
-      <div class="about">
+      <div class="about" id="acerca">
         <img src="js/images/perrito.jpeg" alt="">
         <div class="about-info">
           <h2>Acerca de mí</h2>
           <div class="divider"></div>
           <p>Soy egresada de Ingeniería Geológica por la UNAM, pero me apasiona el área  de TI.</p>
-          <p>Tengo conocimientos sobre lenguajes como Java, Javascript, HTML, CSS.</p>
-          <button class="download-cv">Leer más</button>
+          <p> Por lo tanto decidì estudiar un bootcamp en Generation para mi formaciòn en la área  de TI   </p>
+           <p> Tengo conocimientos sobre lenguajes como Java, Javascript, HTML, CSS. Framework como Bootstrap  y Spring Boot. Repositorio online como GitHub</p>
+          <!--<button class="download-cv">Leer más</button> -->
+
         </div>
       </div>
-      <div class="portfolio">
+      <div class="portfolio" id="porta">
         <div class="portfolio-heading">
           <h2>Mi Portafolio</h2>
           <div class="divider"></div>
@@ -56,10 +66,10 @@
               <h2>Descripción de Proyecto</h2>
             </div>
             <div class="card__proyect-links">
-              <a href="#">
+              <a href="https://github.com/wBerenice/PetBook-Backend">
                 <i class="fab fa-github"></i>
               </a>
-              <a href="">
+              <a href="https://petbook-generation.up.railway.app/">
                 <i class="fas fa-globe-asia"></i>
               </a>
               <a href="">
@@ -79,7 +89,7 @@
               <h2>Descripción de Proyecto</h2>
             </div>
             <div class="card__proyect-links">
-              <a href="#">
+              <a href="">
                 <i class="fab fa-github"></i>
               </a>
               <a href="">
@@ -102,7 +112,7 @@
               <h2>Descripción del Proyecto</h2>
             </div>
             <div class="card__proyect-links">
-              <a href="#">
+              <a href="">
                 <i class="fab fa-github"></i>
               </a>
               <a href="">
@@ -121,17 +131,17 @@
         </div>
       </div>
     
-      <div class="contact-section">
+      <div class="contact-section" id="contact-section">
         <div class="contact-heading">
-          <h2>Keep in touch</h2>
+          <h2>Mantenerse en contacto</h2>
           <div class="divider"></div>
         </div>
         <div class="container-contact">
-          <img src="js/images/about.jpeg" alt="50">
+         <!-- <img src="js/images/about.jpeg" width="550px">-->
 
           <div class="contact-form">
             <h4>Enviar mensaje...</h4>
-            <form class="form-group">
+            <form class="form-group" action="https://formspree.io/f/xwkjlkaq" method="POST">
               <input type="text" placeholder="Nombre" class="input">
               <input type="email" placeholder="Email" class="input">
               <textarea name="message" placeholder="Place your message here..."></textarea>
@@ -147,9 +157,11 @@
           <h5>Frontend Developer</h5>
         </div>
         <div class="sotial-networks">
-          <i class="fab fa-instagram"></i>
-          <i class="fab fa-linkedin"></i>
-          <i class="fab fa-twitter-square"></i>
+       <!-- <i class="fab fa-linkedin" > -->
+       <p class="fab fa-linkedin"> <a href="https://www.linkedin.com/in/bianca-p%C3%A9rez-cuna-4019a4259/"></a></p>
+          
         </div>
       </footer>
+      <script src="js/main.js"></script>
     </body>
+</html>
